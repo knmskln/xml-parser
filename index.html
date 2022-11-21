@@ -1,0 +1,51 @@
+<html>
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        #content {
+            display: flex;
+            /*flex-wrap: wrap;*/
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+
+        #content a {
+            margin: 20px;
+            background-color: palevioletred;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+<h1>ТВ программы</h1>
+<div id="content">
+    <!-- Modal Structure -->
+    <div id="modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Список ТВ программ</h4>
+            <p>Ближайшие программы</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });</script>
+<script src="index.js"></script>
+</html>
